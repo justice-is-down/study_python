@@ -29,3 +29,29 @@ print(f'a[last]={a[3]}')
 print(f'a[last]={a[len(a)-1]}')
 # 파이썬에서 사용되는 방식, 0보다 뒤로가면 맨 뒤로 이동 된다는 개념
 print(f'a[last]={a[0]}')
+
+
+shop_list.sort() #오름차순 -> 순차적
+print(f'shop_list:{shop_list}')
+
+shop_list.sort(reverse=True)  # 내림차순 -> 역차순
+print(f'shop_lost:{shop_list}')
+
+
+#sorted 는 원본의 리스트를 정렬한 값을 새로운 리스트로 반환
+new_list =sorted(shop_list)
+print(f'new_list:{new_list}')
+
+#a의 2번인덱스에 c를 넣는다.
+#insert와 다른점은 해당 인덱스값을 지우고 그자리에 들어간다는 것이다
+a[2] = 'c'
+print(f'a:{a}')
+
+# list 삭제
+del a[1]
+print(f'a:{a}')
+
+
+
+
+
