@@ -30,3 +30,4 @@ print(royal[2])
 print(royal[2][2])
 #특정 층 -> 호 -> 방을 보고 싶을떄
 print(royal[2][2][1])
+
