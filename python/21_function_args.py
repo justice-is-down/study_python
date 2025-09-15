@@ -21,9 +21,37 @@ print(tuple_args(1,2,3,4,5))
 
 # ** 는 매개변수를 사전형태로 받겠다.
 def dic_args(**dic):
-    print(dic)
+    #1. dic 에서 값만 빼온다.
+    values = dic.values()
+    print(values)
+    #2. 이값들을 하나씩 더해 누적시킨다.
+    total = 0
+    for v in values:
+        # print(v)
+        total += v
+    #3. 누적시킨값을 밖으로 return한다.
+    return total
+
+     print(dic)
+
+    result = 0
+    for key in dic.keys():
+        result += dic. get(key)
+    print(result)
+
+    result2 = 0
+    for value in dic.values():
+        result2 += value
+        print(result2)
+
+    result3 = 0
+    for item in dic.items():
+        result3 += item[1]
+        print(result3)
+
+
+
 
 # 위 함수를 실행하면 입력된 값들의 합산이 반한되도록 하세요
-dic_args(kim=50, lee=100, park=70, na= 90)
+result = dic_args(kim=50, lee=100, park=70, na= 90)
 print(result)
-
