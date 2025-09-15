@@ -13,5 +13,9 @@ def tuple_args(*numbers):
     for num in numbers:
         total += num
     return total
-
+# 이 방식은 사용자가 인자값의 갯수를 자유롭게 정해서 넣을 수 있다.
 print(tuple_args(1,2,3,4,5))
+
+# ** 는 매개변수를 사전형태로 받겠다.
+def dic_args(**dic):
+    pass
