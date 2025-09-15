@@ -1,4 +1,7 @@
 #인자값으로 아무것도 들어오지 않ㅇ았을 경우 에러를 방지하기 위해 기본값 설정이 가능
+from ctypes import HRESULT
+
+
 def plus(num=0):
     resutl = num + 5
     return resutl
@@ -18,4 +21,9 @@ print(tuple_args(1,2,3,4,5))
 
 # ** 는 매개변수를 사전형태로 받겠다.
 def dic_args(**dic):
-    pass
+    print(dic)
+
+# 위 함수를 실행하면 입력된 값들의 합산이 반한되도록 하세요
+dic_args(kim=50, lee=100, park=70, na= 90)
+print(result)
+
