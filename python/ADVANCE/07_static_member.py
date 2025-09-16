@@ -6,7 +6,7 @@ class Robot:
 
     @classmethod #원본영역의 변수를 건드릴수 있다는 표시
     def std_count(self):
-        print(f'클래스 메서드: {self.count}')정
+        print(f'클래스 메서드: {self.count}')
 
 r1 = Robot()
 r2 = Robot()
