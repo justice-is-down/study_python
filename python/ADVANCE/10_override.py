@@ -21,5 +21,4 @@ class MyCar(Car):
 mc = MyCar()
 mc.start()
 mc.run = true
-mc.run()
 mc.stop()
